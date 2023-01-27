@@ -14,6 +14,7 @@ export function* callGetHotelsWorker(action) {
     if (response.status === 200) {
         yield put(setItems(response.data))
     }
+    console.log(response)
     yield delay(2000)
     yield put(setLoading(false))
     yield put(push(routes.hotels))
