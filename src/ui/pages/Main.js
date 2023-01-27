@@ -27,7 +27,7 @@ function Main() {
         dispatch(getHotelsAsync(value))
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(getDestinationsAsync())
     }, [])
 
